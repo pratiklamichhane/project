@@ -89,7 +89,7 @@ const modules = [Navigation];
             <div class="p-6 flex-1 flex flex-col">
               <h3 class="text-xl font-semibold mb-2">{{ project.title }}</h3>
               <p class="text-gray-400 mb-4 flex-1">{{ project.description }}</p>
-              <a :href="project.link" class="text-blue-400 hover:text-blue-300 transition-colors mt-auto">
+              <a :href="project.link" class="text-blue-400 hover:text-blue-300 transition-colors mt-auto" target="_blank">
                 View Project →
               </a>
             </div>

@@ -66,7 +66,7 @@ const personalProjects = [
   {
     title: 'Personal Portfolio Website - This website',
     description: 'A personal portfolio website that showcases my projects, skills, and experience. Developed with Vue.js, Tailwind CSS, and Vite.',
-    link: '#'
+    link: "https://github.com/pratiklamichhane/project"
   },
   {
     title: 'Election Management System',
@@ -306,7 +306,7 @@ onMounted(() => {
             <h3 class="text-xl mb
             -2">{{ plugin.name }}</h3>
             <p class="text-gray-400">{{ plugin.description }}</p>
-            <a :href="plugin.link" class="text-blue-400 hover:text-blue-300 transition-colors mt-auto">
+            <a :href="plugin.link" class="text-blue-400 hover:text-blue-300 transition-colors mt-auto" target="_blank">
               View Plugin →
             </a>
           </div>
@@ -318,7 +318,7 @@ onMounted(() => {
       <section id="personalProjects" class="mb-20" :class="{ 'opacity-0': !isIntersecting.personalProjects, 'opacity-100 transition-opacity duration-1000': isIntersecting.personalProjects }">
         <div>
     <h2 class="text-2xl mb-2  bg-gradient-to-r from-blue-200 to-slate-200 bg-clip-text text-transparent">
-      Personal Projects I've worked on.
+      Personal Open Source Projects I've worked on.
     </h2>
     <p class="mb-8 text-gray-300">
       Here are some of the personal projects that I have worked on in my free time. I enjoy exploring new technologies and building side projects that allow me to experiment with different tools and frameworks.
@@ -329,7 +329,7 @@ onMounted(() => {
                class="border-l-2 border-gray-800 pl-6">
             <h3 class="text-xl">{{ project.title }}</h3>
             <p class="text-gray-400">{{ project.description }}</p>
-            <a :href="project.link" class="text-blue-400 hover:text-blue-300 transition-colors mt-2">
+            <a :href="project.link" class="text-blue-400 hover:text-blue-300 transition-colors mt-2" target="_blank">
               View Project →
             </a>
           </div>
